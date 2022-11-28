@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 
+import LOGO from '../assets/images/kisspng-victoria-cross.png';
+
 const StyledHeader = styled.header`
   /* position: fixed; */
   width: 100%;
@@ -39,16 +41,24 @@ const NavItem = styled.li`
   }
 `;
 
+const LogoWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+`
 const Logo = styled.img`
-  width: 80px;
-  aspect-ratio: 1;
+  height: 60px;
 `;
 
 export default () => {
   return (
     <StyledHeader>
       <Link to="/">
-        <Logo  alt="MITIT"/>
+        <LogoWrapper>
+
+        <Logo src={LOGO} alt="MITIT"/>
+        Хрест Вікторії
+        </LogoWrapper>
       </Link>
       <Navigation>
         <NavItems>

@@ -13,7 +13,7 @@ const StyledFooter = styled.footer`
 const Footer = () => {
   return (
     <StyledFooter>
-        All the right are reserved.
+        Всі права захищені
     </StyledFooter>
   );
 };

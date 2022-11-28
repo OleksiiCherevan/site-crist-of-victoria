@@ -9,6 +9,7 @@ import About from './components/About';
 import Container from './components/Container';
 import Gallery from './components/Gallery';
 import News from './components/News';
+import Contacts from './components/Contacts';
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/news" element={<News />}></Route>
+        <Route path='/contacts' element={<Contacts />}></Route>
       </Routes>
       </Container>
       <Footer/>

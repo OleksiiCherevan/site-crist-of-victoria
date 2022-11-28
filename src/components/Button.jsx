@@ -10,6 +10,7 @@ const StyledButton = styled.span`
   justify-content: center;
   align-items: center;
   transition: .3s all;
+  background-color: #f0f0f020;
   
   &:hover {
     transform: scale(1.2);
